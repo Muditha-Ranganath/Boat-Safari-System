@@ -1,0 +1,151 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Silverpage.css">
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="Aboutpage.html">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="#" class="active">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="Safariinfopage.html">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="Registerpage.html">Register</a></li>
+					<li><a href="Profilepage.html">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="Downloadpage.html">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+			<div class="packagessilver">
+				<h1>SILVER TICKET</h1>
+				<center><p style="color:black";> Click the button show packages</p></center><br><br>
+				<center><div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'Sea Side Safari')" id="defaultOpen">Sea Side Safari</button>
+					<button class="tablinks" onclick="openCity(event, 'River Side Safari')">River Side Safari</button>
+				</div></center><br><br>
+				<div id="Sea Side Safari" class="tabcontent">
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br><br>
+					<ul>
+						<li>Breakfast / lunch / Dinner </li>
+						<li>Soft Drink</li>
+						<li>You Can Arrange 5 Passenger</li>
+					</ul><br>
+					<div class="packimg">
+						<img src="..\images/Sli01.jfif" width="30%">
+						<img src="..\images/Sil05.jfif" width="30%">
+						<img src="..\images/Sil06.jfif" width="30%">
+					</div>
+				</div>
+				<div id="River Side Safari" class="tabcontent">
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br><br>
+					<ul>
+						<li>Breakfast / lunch / Dinner </li>
+						<li>Soft Drink</li>
+						<li>You Can Arrange 5 Passenger</li>
+					</ul><br>
+					<div class="packimg">
+						<img src="..\images/Sil02.jfif" width="30%">
+						<img src="..\images/Sil03.jfif" width="30%">
+						<img src="..\images/Sil04.jfif" width="30%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>

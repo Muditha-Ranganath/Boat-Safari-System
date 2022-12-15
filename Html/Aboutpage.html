@@ -1,0 +1,162 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Aboutpage.css">
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="#" class="active">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="Silverpage.html">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="Safariinfopage.html">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="Registerpage.html">Register</a></li>
+					<li><a href="Profilepage.html">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="Downloadpage.html">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+			<div class="about">
+				<div class="about-section">
+					<h1>About Us </h1>
+				</div>
+				<div class="about-misson">
+					<h2>About Us </h2>
+					<p style="color: black; text-align: center;">We are the only Leading Boat Safari Company in Sri Lanka with fully insured<br>We have luxury boats, semi luxury boats and small ship with a resturents<br>We have boat riders with much more experiance and knowledge they are very decent respectable and careful riders.<br>Before start each and ever tour we provide safty jackets to the passangers because we take care about passengers saftyfirst.<br>Our rates are very resonable and passanger can do the recervations online by paiying advance</p>
+				</div>
+				<h2 style="text-align:center">Our Team</h2>
+				<div class="row12">
+					<div class="column5">
+						<div class="card2">
+							<img src="..\images/male_avatar.png" alt="Jane" style="width:100%">
+							<div class="container">
+								<h2>Manger</h2>
+								<p class="title" style="color: black;">Company Manager</p>
+								<p style="color: black;">manger@gmail.com</p><br><br>
+								<p><button class="button">Contact</button></p><br><br>
+							</div>
+						</div>
+					</div>
+					<div class="column5">
+						<div class="card2">
+							<img src="..\images/male_avatar.png" alt="Mike" style="width:100%">
+							<div class="container">
+								<h2>Co-Manager</h2>
+								<p class="title" style="color: black;">Staff Manager</p>
+								<p style="color: black;">co-manager@gmail.com</p><br><br>
+								<p><button class="button">Contact</button></p><br><br>
+							</div>
+						</div>
+					</div>
+					<div class="column5">
+						<div class="card2">
+							<img src="..\images/male_avatar.png" alt="John" style="width:100%">
+							<div class="container">
+								<h2>Boat rider</h2>
+								<p class="title" style="color: black;">Boat Rider</p>
+								<p style="color: black;">rider@gmail.com</p><br><br>
+								<p><button class="button">Contact</button></p><br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>

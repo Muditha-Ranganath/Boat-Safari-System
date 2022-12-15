@@ -1,0 +1,215 @@
+
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Registerpage.css">
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="Aboutpage.html">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="Silverpage.html">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="safari info.html">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="#"class="active">Register</a></li>
+					<li><a href="Profilepage.html">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="Downloadpage.html">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+		<h2 style="text-align:center">Sign up with Social Media or Manually</h2><br>
+			<div class="row">		
+				<div class="col-left">
+					<h4 style="text-align:center"> Sign in with your social network</h4><br><br>
+					<br>
+					<a href="#" class="fb btn">
+						<i class="fab fa-facebook fa-f"></i> Login with Facebook
+					</a>
+					<a href="#" class="twitter btn">
+						<i class="fab fa-twitter fa-f"></i> Login with Twitter
+					</a>
+					<a href="#" class="google btn">
+						<i class="fab fa-google fa-f"></i> Login with Google+
+					</a>
+				</div> 
+				<div class="col-right">
+					<h4 style="text-align:center"> Manual Sign Up</h4><br><br>
+					<br>
+					<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click Me Sign Up</button>
+					<div id="id01" class="modal">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<form class="modal-content" method="POST"  action="..\php/submit.php">
+							<div class="container">
+								<h1>Sign Up</h1>
+								<p style="color:black">Please fill in this form to create your account.</p>
+								<hr>
+								<div class="feild-name">
+									<label for="fname">First Name</label>
+								</div>
+								<div class="feild">
+									<input type="text" id="fname" name="firstname" placeholder="Enter your first name..." required>
+								</div>
+								<div class="feild-name">
+									<label for="lname">Last Name</label>
+								</div>
+								<div class="feild">
+									<input type="text" id="lname" name="lastname" placeholder="Enter your last name..." required>
+								</div>
+								<div class="feild-name">
+									<label for="gender">Gender</label>
+								</div>
+								<div class="feild-radio">
+									<input type="radio" id="male" name="gender" value="m"> <label for="male">Male</label><br>
+									<input type="radio" id="female" name="gender" value="f"> <label for="female">Female</label><br>
+								</div>
+								<div class="feild-name">
+									<label for="phone">Phone no</label>
+								</div>
+								<div class="feild">
+									    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+								</div>
+								<div class="feild-name">
+									<label for="birthday">Birthday</label>
+								</div>
+								<div class="feild">
+									    <input type="date" id="birthday" name="birthday" placeholder="Enter your birthday..." pattern="dd mm yyyy" required>
+								</div>
+								<div class="feild-name">
+									<label for="email">Email</label>
+								</div>
+								<div class="feild">
+									    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+								</div>
+								<div class="feild-name">
+									<label for="psw">Password</label>
+								</div>
+								<div class="feild">
+									    <input type="password" id="psw" name="psw" placeholder="Enter your password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+								</div>
+								<div class="feild-name">
+									<label for="psw-repeat">Conform Password</label>
+								</div>
+								<div class="feild">
+									    <input type="password" id="psw-repeat" name="psw-repeat" placeholder="Enter Re-password..." title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+								</div>
+								<label>
+									<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" required> I Agree Terms and Conditions
+								</label>
+								<center><a href="#" style="color:dodgerblue">Terms & Privacy</a></center>
+								<div class="clearfix">
+									<center><input type="reset" value="Reset"></center>
+									<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+									<button type="submit" name="BtnSubmit" class="signupbtn">Register</button>
+								</div>
+								<div class="container signin">
+									<center><p style="color:black">Already have an account? <a href="Loginpage.html" style="color:dodgerblue">Sign in</a></center>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row1">
+				<div class="col-bottom">
+					<p style="color:black">Already have an account? <a href="Loginpage.html" style="color:dodgerblue">Sign in</a></p><br><br>
+					<br>
+					<br><a href="#" style="color:dodgerblue">Terms & Conditions</a> | <a href="#" style="color:dodgerblue">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>

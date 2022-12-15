@@ -1,0 +1,104 @@
+.main .secondmanu .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #333;
+  width: 30%;
+  text-align: center;
+}
+.main .secondmanu .tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.main .secondmanu .tab button:hover {
+  background-color: red;
+}
+.main .secondmanu .tab button.active {
+  background-color: green;
+}
+.main .secondmanu .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.main .secondmanu .tabcontent h3{
+	color: black;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.main .secondmanu .tabcontent img {
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+/*images*/
+img {
+  vertical-align: middle;
+}
+.main .secondmanu .tabcontent .container10 {
+  position: relative;
+}
+.main .secondmanu .tabcontent .container10 .mySlides {
+  display: none;
+}
+.main .secondmanu .tabcontent .container10 .row01 .column01 .cursor {
+  cursor: pointer;
+}
+.main .secondmanu .tabcontent .container10 .prev,
+.main .secondmanu .tabcontent .container10 .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.main .secondmanu .tabcontent .container10 .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.main .secondmanu .tabcontent .container10 .prev:hover,
+.main .secondmanu .tabcontent .container10 .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .secondmanu .tabcontent .container10 .mySlides .numbertext {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.main .secondmanu .tabcontent .container10 .row01:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main .secondmanu .tabcontent .container10 .row01 .column01 {
+  float: left;
+  width: 16.66%;
+}
+.main .secondmanu .tabcontent .container10 .row01 .column01 .demo {
+  opacity: 0.6;
+}
+.active,
+.main .secondmanu .tabcontent .container10 .row01 .column01 .demo:hover {
+  opacity: 1;
+}
+
+.main .secondmanu .tabcontent a {
+	color: black;
+}
+.main .secondmanu .tabcontent a:hover {
+	color: red;
+}

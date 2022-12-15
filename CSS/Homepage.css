@@ -1,0 +1,434 @@
+/*heder*/
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #404040;
+  color: white;
+  font-size: 20px;
+  height: 450px;
+}
+.header a.button1{
+	float: right;
+	padding: 20px;
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid #ffffff;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#ffffff;
+	text-align:center;
+	transition: all 0.2s;
+}
+.header a.button1:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+.header h1 {
+	text-align:center;
+	font-size: 100px;
+	padding-top: 80px;
+}
+@media all and (max-width:30em){
+.header a.button1{
+	display:block;
+	margin:0.4em auto;
+}
+}
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.footer {
+	background-color: #333;
+}
+hr{
+	color: 2px #ffffff
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h3{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content .fas{
+  font-size: 15px;
+  background: #1a1a1a;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.left .content .fas:hover{
+  background: #f12020;
+} 
+.left .content .text{
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.center  form .msg{
+  margin-top: 10px;
+}
+.center form input, .center form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: white;
+}
+.center form input:focus,
+.center form textarea:focus{
+  outline-color: #3498db;
+}
+.center form input{
+  height: 30px;
+}
+.center form .btn{
+  margin-top: 10px;
+}
+.center form .btn button{
+  height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.center form .btn button:hover{
+  background: #000;
+}
+.right img {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.right p{
+  text-align: justify;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.right h4 {
+	color: #oooooo;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.bottom .social{
+  margin: 20px 0 0;
+  text-align: center; 
+}
+.bottom .social a{
+  padding: 0 2px;
+}
+.bottom .social a span{
+  height: 30px;
+  width: 30px;
+  background: #1a1a1a;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.bottom .social a span:hover{
+  background: #f12020;
+}
+@media screen and (max-width: 900px) {
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+/*navigation bar*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: red;
+}
+.topnav .icon {
+  display: none;
+}
+/*dropdown manu*/
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 17px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f2f2f2;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown:hover .dropbtn{
+	background-color: #ddd;
+	color: black;
+}
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+	  display: none;
+	  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+	  position: relative;
+	  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*body*/
+* {
+  box-sizing: border-box;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  flex: 15%;
+  background-color: #666666;
+  padding: 10px; 
+}
+.side h2 {
+	color: #ffffff
+}
+a.active {
+  background-color: #4CAF50;
+  color: red;
+}
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  color: black;
+}
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #f2f2f2;
+  display: block
+}
+#myMenu li a:hover {
+  background-color: #ddd;
+  color: red;
+}
+@media screen and (max-height: 450px) {
+  .side {padding-top: 15px;}
+  .side a {font-size: 18px;}
+}
+.main {   
+  flex: 85%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+/*body*/
+.main .about .row12 .column5 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.main .about .row12 .column5 .card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.main .about .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.main .about .about-section h1{
+  color: black;
+}
+.main .about h2 {
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.main .about .row12 .column5 .card2 .container {
+  padding: 0 16px;
+}
+.main .about .about-misson h2 {
+	color: black;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+.main .about .about-misson button {
+	padding: 15px 20px;
+	background-color: #4CAF50;
+	color: white;
+}
+.main .about .about-misson button:hover {
+	background-color: #333;
+	color: red;
+}
+.main .about .row12 .column5 .card2 .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .about .row12 .column5 .card2 .row12::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .about .row12 .column5 .card2 .container .title {
+  color: grey;
+}
+
+.main .about .row12 .column5 .card2 .container .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.main .about .row12 .column5 .card2 .container .button:hover {
+  background-color: red;
+}
+@media screen and (max-width: 650px) {
+  .column5 {
+    width: 100%;
+    display: block;
+  }
+}

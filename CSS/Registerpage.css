@@ -1,0 +1,265 @@
+/*register header*/
+.main h2 {
+	color: #333;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 30px;
+}
+.main .row .col-left h4 {
+	color: #333;
+	text-align: center;
+	padding-top: 30px;
+}
+.main .row .col-right h4 {
+	color: #333;
+	text-align: center;
+	padding-top: 30px;
+}
+.main .row1 .col-bottom {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+/* link color*/
+.main .col-right .modal .modal-content .container a:hover {
+  background-color: #ffff00;
+}
+.main .row1 .col-bottom a:hover {
+  background-color: #ffff00;
+}
+/*social login*/
+.main .col {
+	width: 50%;
+	float: left;
+	margin: auto;
+}
+.main .col-left {
+	margin-left: 30px;
+	padding-left: 40px;
+	border-right: 1px solid #aaa;
+}
+.main .fb {
+  background-color: #3B5998;
+  color: white;
+}
+.main .fb:hover {
+	background-color: #2b406e;
+}
+.main .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+.main .twitter:hover {
+	background-color: #1271ba;
+}
+.main .google {
+  background-color: #dd4b39;
+  color: white;
+}
+.main .google:hover {
+	background-color: #99291a;
+}
+.main .btn {
+  width: 75%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; 
+}
+.main .btn:hover {
+  opacity: 2;
+}
+/*manual login*/
+.main .col-right {
+	margin-left: 40px;
+	padding-left: 50px;
+}
+.main .col-right button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.main button:hover {
+  opacity:2;
+  background: #000;
+}
+.main .col-right .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+.main .col-right .modal .close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.main .col-right .close:hover,
+.main .col-right .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/*register form styles*/
+.main .col-right .modal .modal-content .container h1, label {
+	color: black;
+}
+.main .col-right .modal .modal-content .container hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+.main .col-right .modal .modal-content .container {
+  padding: 16px;
+}
+.main .col-right .modal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%;
+}
+.main .col-right .modal .container input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+.main .col-right .modal .container input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+.main .col-right .modal .container input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+.main .col-right .modal .container input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+.main .col-right .modal .container input[type=date] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+ .main .col-right .modal .container .feild-name {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.main .col-right .modal .container .feild {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+.main .col-right .modal .container .feild-radio {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  padding-left: 20px
+}
+.main .col-right .modal .container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*register form button*/
+.main .col-right .modal .modal-content .container .clearfix .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.main .col-right .modal .modal-content .container .clearfix .signupbtn {
+	padding: 14px 20px;
+	background-color: #4CAF50;
+}
+.main .col-right .modal .modal-content .container .clearfix .cancelbtn {
+  float: left;
+  width: 50%;
+}
+.main .col-right .modal .modal-content .container .clearfix .signupbtn {
+  float: left;
+  width: 50%;
+}
+.main .col-right .modal .modal-content .container .clearfix button:hover {
+  opacity:2;
+  background: #ff1a1a;
+}
+.main .col-right .modal .modal-content .container .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .col-right .modal .modal-content .container .clearfix input {
+  background-color:  #80aaff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.main .col-right .modal .modal-content .container .clearfix input:hover {
+  opacity:2;
+  background: #ff1a1a;
+}
+
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  .vl {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feild-name, .feild, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .checked {
+	  width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+  input {
+	  width: 100%;
+  }
+}

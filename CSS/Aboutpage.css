@@ -1,0 +1,68 @@
+.main .about .row12 .column5 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.main .about .row12 .column5 .card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.main .about .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.main .about .about-section h1{
+  color: black;
+}
+.main .about h2 {
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.main .about .row12 .column5 .card2 .container {
+  padding: 0 16px;
+}
+.main .about .about-misson h2 {
+	color: black;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+.main .about .row12 .column5 .card2 .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .about .row12 .column5 .card2 .row12::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .about .row12 .column5 .card2 .container .title {
+  color: grey;
+}
+
+.main .about .row12 .column5 .card2 .container .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.main .about .row12 .column5 .card2 .container .button:hover {
+  background-color: red;
+}
+@media screen and (max-width: 650px) {
+  .column5 {
+    width: 100%;
+    display: block;
+  }
+}

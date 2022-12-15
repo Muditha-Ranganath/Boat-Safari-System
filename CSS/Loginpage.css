@@ -1,0 +1,95 @@
+.main .row5 {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.main .row5 .column-left {
+  flex: 30%;
+  background-color: #666666;
+  padding: 10px; 
+}
+.main .row5 .column-right {   
+  flex: 50%;
+  background-color: red;
+  padding: 20px;
+}
+/*left side*/
+.main .row5 .column-left h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+.main .row5 .column-left p {
+	text-align: center;
+}
+.main .row5 .column-left label {
+	padding-left: 20px;
+}
+.main .row5 .column-left input[type=email] {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  resize: vertical;
+  color: black;
+}
+.main .row5 .column-left input[type=password] {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  resize: vertical;
+  color: black;
+}
+.main .row5 .column-left a:link, a:visited {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+   border-radius: 30px;
+  cursor: pointer;
+}
+.main .row5 .column-left a:hover, a:active {
+  background-color: red;
+   opacity: 1;
+}
+/*right side*/
+.main .row5 .column-right img {
+  border-radius: 50%;
+}
+.main .row5 .column-right h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+.main .row5 .column-right h3 {
+	text-align: center;
+}
+.main .row5 .column-right a:link, a:visited {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 40%;
+   border-radius: 30px;
+  cursor: pointer;
+}
+.main .row5 .column-right a:hover, a:active {
+  background-color: black;
+   opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .main .column-left, .column-right {
+    width: 100%;
+	 margin-top: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .row5 {   
+    flex-direction: column;
+  }
+}

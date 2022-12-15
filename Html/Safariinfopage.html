@@ -1,0 +1,391 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Safariinfopage.css">
+	<script type="text/javascript" src="..\Js/info.js"> </script>
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="Aboutpage.html">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="Silverpage.html">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="#" class="active">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="Registerpage.html">Register</a></li>
+					<li><a href="Profilepage.html">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="Downloadpage.html">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+			<div class="secondmanu"> 
+				<center><div class="tab">
+					<button class="tablinks" onclick="opensecmenu(event, 'Images')">Images</button>
+					<button class="tablinks" onclick="opensecmenu(event, 'Videos')">Videos</button>
+					<button class="tablinks" onclick="opensecmenu(event, 'Maps')">Maps</button>
+					<button class="tablinks" onclick="opensecmenu(event, 'News')">News</button>
+				</div></center><br><br>
+				<div id="Images" class="tabcontent">
+					<div class="container10">
+						<div class="mySlides">
+							<div class="numbertext">1 / 30</div>
+							<img src="..\images/M01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 30</div>
+							<img src="..\images/M02.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 30</div>
+							<img src="..\images/M03.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 30</div>
+							<img src="..\images/M04.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">5 / 30</div>
+							<img src="..\images/M05.jpg" style="width:100%">
+						</div> 
+						<div class="mySlides">
+							<div class="numbertext">6 / 30</div>
+							<img src="..\images/M06.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="row01">
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M01.jpg" style="width:100%" onclick="currentSlide(1)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M02.jpg" style="width:100%" onclick="currentSlide(2)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M03.jpg" style="width:100%" onclick="currentSlide(3)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M04.jpg" style="width:100%" onclick="currentSlide(4)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M05.jpg" style="width:100%" onclick="currentSlide(5)">
+							</div>    
+							<div class="column01">
+								<img class="demo cursor" src="..\images/M06.jpg" style="width:100%" onclick="currentSlide(6)">
+							</div>
+						</div>
+					</div>
+					<div class="container10">
+						<div class="mySlides">
+							<div class="numbertext">7 / 30</div>
+							<img src="..\images/NE01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">8 / 30</div>
+							<img src="..\images/NE02.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">9 / 30</div>
+							<img src="..\images/NE03.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">10 / 30</div>
+							<img src="..\images/NE04.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">11 / 30</div>
+							<img src="..\images/NE08.jpg" style="width:100%">
+						</div> 
+						<div class="mySlides">
+							<div class="numbertext">12 / 30</div>
+							<img src="..\images/NE06.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="row01">
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE01.jpg" style="width:100%" onclick="currentSlide(7)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE02.jpg" style="width:100%" onclick="currentSlide(8)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE03.jpg" style="width:100%" onclick="currentSlide(9)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE04.jpg" style="width:100%" onclick="currentSlide(10)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE08.jpg" style="width:100%" onclick="currentSlide(11)">
+							</div>    
+							<div class="column01">
+								<img class="demo cursor" src="..\images/NE06.jpg" style="width:100%" onclick="currentSlide(12)">
+							</div>
+						</div>
+					</div>
+					<div class="container10">
+						<div class="mySlides">
+							<div class="numbertext">13 / 30</div>
+							<img src="..\images/K01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">14 / 30</div>
+							<img src="..\images/K02.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">15 / 30</div>
+							<img src="..\images/K03.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">16 / 30</div>
+							<img src="..\images/K04.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">17 / 30</div>
+							<img src="..\images/K07.jpg" style="width:100%">
+						</div> 
+						<div class="mySlides">
+							<div class="numbertext">18 / 30</div>
+							<img src="..\images/K08.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="row01">
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K01.jpg" style="width:100%" onclick="currentSlide(13)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K02.jpg" style="width:100%" onclick="currentSlide(14)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K03.jpg" style="width:100%" onclick="currentSlide(15)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K04.jpg" style="width:100%" onclick="currentSlide(16)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K07.jpg" style="width:100%" onclick="currentSlide(17)">
+							</div>    
+							<div class="column01">
+								<img class="demo cursor" src="..\images/K08.jpg" style="width:100%" onclick="currentSlide(18)">
+							</div>
+						</div>
+					</div>
+					<div class="container10">
+						<div class="mySlides">
+							<div class="numbertext">19 / 30</div>
+							<img src="..\images/H01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">20 / 30</div>
+							<img src="..\images/H02.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">21 / 30</div>
+							<img src="..\images/H03.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">22 / 30</div>
+							<img src="..\images/H07.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">23 / 30</div>
+							<img src="..\images/H05.jpg" style="width:100%">
+						</div> 
+						<div class="mySlides">
+							<div class="numbertext">24 / 30</div>
+							<img src="..\images/H06.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="row01">
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H01.jpg" style="width:100%" onclick="currentSlide(19)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H02.jpg" style="width:100%" onclick="currentSlide(20)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H03.jpg" style="width:100%" onclick="currentSlide(21)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H07.jpg" style="width:100%" onclick="currentSlide(22)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H05.jpg" style="width:100%" onclick="currentSlide(23)">
+							</div>    
+							<div class="column01">
+								<img class="demo cursor" src="..\images/H06.jpg" style="width:100%" onclick="currentSlide(24)">
+							</div>
+						</div>
+					</div>
+					<div class="container10">
+						<div class="mySlides">
+							<div class="numbertext">25 / 30</div>
+							<img src="..\images/B01.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">26 / 30</div>
+							<img src="..\images/B02.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">27 / 30</div>
+							<img src="..\images/B03.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">28 / 30</div>
+							<img src="..\images/B07.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">29 / 30</div>
+							<img src="..\images/B05.jpg" style="width:100%">
+						</div> 
+						<div class="mySlides">
+							<div class="numbertext">30 / 30</div>
+							<img src="..\images/B08.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="row01">
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B01.jpg" style="width:100%" onclick="currentSlide(25)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B02.jpg" style="width:100%" onclick="currentSlide(26)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B03.jpg" style="width:100%" onclick="currentSlide(27)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B07.jpg" style="width:100%" onclick="currentSlide(28)">
+							</div>
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B05.jpg" style="width:100%" onclick="currentSlide(29)">
+							</div>    
+							<div class="column01">
+								<img class="demo cursor" src="..\images/B08.jpg" style="width:100%" onclick="currentSlide(30)">
+							</div>
+						</div>
+					</div>						
+				</div>
+				<div id="Videos" class="tabcontent"> 
+					<video width="400" controls>
+						<source src="..\images/V01.mp4" type="video/mp4">
+					</video>
+					<video width="400" controls>
+						<source src="..\images/V02.mp4" type="video/mp4">
+					</video>
+					<video width="400" controls>
+						<source src="..\images/V02.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div id="Maps" class="tabcontent">
+					<h3>Click Image go to map</h3>
+					<a href="https://maps.app.goo.gl/PXyKY1uGdryYP9fL8" target="_blank"><img src="..\images/1603126219012.jpg" style="width:30%"></a> 
+					<a href="https://maps.app.goo.gl/vQzNw4NMHtofrX6E6" target="_blank"><img src="..\images/1603126570695.jpg" style="width:30%"></a>
+					<a href="https://maps.app.goo.gl/wgV2mELMEb2AgtUUA" target="_blank"><img src="..\images/1603127013830.jpg" style="width:30%"></a>
+					<a href="https://maps.app.goo.gl/WFttUMp6RtP2D4hRA" target="_blank"><img src="..\images/1603127318279.jpg" style="width:30%"></a>
+				</div>
+				<div id="News" class="tabcontent">
+					<h3><a href="https://www.straitstimes.com/lifestyle/travel/sri-lankas-natural-wonderland-from-a-boat" class="button2">Sri lanka natural wonderland from a boat Travel news</a></h3>
+					<h3><a href="https://www.telegraph.co.uk/travel/safaris-and-wildlife/cutest-animals-where-to-see-world/" class="button2">The science behind which animal are cutest and where to...</a></h3>
+					<h3><a href="https://news.mongabay.com/2020/05/photos-up-close-with-the-saltwater-crocs-of-sri-lankas-nilwala-river/" class="button2">Up close with the saltwater crocs of sri lanka....</a></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>

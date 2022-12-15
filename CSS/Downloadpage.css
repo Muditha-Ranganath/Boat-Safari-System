@@ -1,0 +1,45 @@
+.main .row10 .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.main .row10 .btn:hover {
+  background-color: RoyalBlue;
+}
+.main .header5 {
+  text-align: center;
+  padding: 32px;
+}
+.main .row14 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.main .row14 .column14 {
+  flex: 50%;
+  padding: 0 4px;
+}
+.main .row14 .column14 img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.main .header5 .btn1 {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: red;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+.main .header5 .btn1:hover {
+  background-color: black;
+  color: white;
+}
+.main .header5 .btn1.active {
+  background-color: red;
+  color: black;
+}

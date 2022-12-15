@@ -1,0 +1,203 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Profilepage.css">
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="Aboutpage.html">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="Silverpage.html">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="Safariinfopage.html">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="Registerpage.html">Register</a></li>
+					<li><a href="#" class="active">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="Downloadpage.html">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+			<div class="row8">
+				<div class="col-proleft">
+					<center><div class="procard">
+						<img src="..\images/female_avatar.png" alt="Avatar" style="width:100%">
+						<div class="procontainer">
+							<h4>User Name</h4> 
+						</div>
+					</div></center>	
+				</div>
+				<div class="col-proright" style="background-image: url(https://i.imgur.com/6YuRxJA.png)">
+					<div class="back">
+						<i class="fa fa-long-arrow-left"></i>
+                        <h5><a href="Homepage.html">Back to home</a></h5>
+					</div>
+					<div class="edit">
+						<i class="fa fa-long-arrow-right"></i>
+                        <h5><a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >profile setting</a></h5>
+						<div id="id02" class="modal">
+							<form class="pro-modal" action="/action_page.php" method="post">
+								<div class="pro">
+									<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+								</div>	
+								<div class="pro-feild">
+									<center><div class="upload">
+										<img src="..\images/female_avatar.png" alt="Avatar" class="avatar"><br>
+										<p style="color: white;">Click the choose file Upload Profile Picture</p><br><br>
+										<input type="file" id="actual-btn" hidden/>
+										<label for="actual-btn">Choose File</label>
+										<span id="file-chosen">No file chosen</span>
+									</div></center><br><br>
+									<label for="fname">Edit Your Name</label><br>
+									<input type="text" id="fname" name="firstname" placeholder="Enter name..."><br><br>							
+									<label for="phone">Edit Your Phone no</label><br>							
+									<input type="tel" id="phone" name="phone" placeholder="Enter phone number..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}"><br><br>
+									<label for="birthday">Edit Your Birthday</label><br>
+									<input type="date" id="birthday" name="birthday" placeholder="Enter birthday..." pattern="dd mm yyyy"><br><br>
+								</div>
+								<div class="pro-container">
+									<center><button type="submit">Save Profile</button></center>
+								</div>
+								<div class="pro-container" style="background-color:#f1f1f1">
+									<center><button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button></center>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="card-block">
+                        <h4>Information</h4><hr>
+						<div class="row9">
+							<div class="mail">
+								<p style="color: black";>Email :</p>
+								<h5>Your Name</h5>
+							</div>
+							<div class="pho">
+								<p style="color: black";>Phone :</p>
+								<h5>+94 788952364</h5>
+							</div>
+							<div class="bri">
+								<p style="color: black";>Birthday :</p>
+								<h5>26 12 2000</h5>
+							</div>
+						</div>
+					    <div class="pro-social">
+							<a href="#"><span class="fab fa-facebook-f"></span></a>
+							<a href="#"><span class="fab fa-twitter"></span></a>
+							<a href="#"><span class="fab fa-instagram"></span></a>
+						</div><br><br>
+						<div class="pro-container">
+							<button onclick="document.getElementById('id03').style.display='block'">Delete Account</button>
+							<div id="id03" class="modal2">
+								<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal2">×</span>
+								<form class="modal2-content" action="/action_page.php">
+									<div class="container">
+										<h1>Delete Account</h1>
+										<p style="color: black;">Are you sure you want to delete your account?</p>
+										<div class="clearfix2">
+											<button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">NO</button>
+											<button type="button" onclick="document.getElementById('id03').style.display='none'" class="deletebtn">YES</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>

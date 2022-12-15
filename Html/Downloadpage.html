@@ -1,0 +1,177 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Boat Safari Management System</title>
+	<link rel="stylesheet" href="..\CSS/Homepage.css">
+	<link rel="stylesheet" href="..\CSS/Downloadpage.css">
+	<script type="text/javascript" src="..\Js/img.js"> </script>
+	<script type="text/javascript" src="..\Js/java.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<div class="header">
+		<img src="..\images/logo.jpg" width="200px" height="auto">
+		<a href="Loginpage.html" class="button1">Login</a>
+		<h1>Boat Safari System </h1>
+	</div>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="Homepage.html">Home</a>
+		<a href="Aboutpage.html">About</a>
+		<a href="Destinationpage.html">Destination</a>
+		<a href="Safaripage.html">Safari</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Packages 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Goldenpage.html">Golden Ticket</a>
+				<a href="Silverpage.html">Silver Ticket</a>
+				<a href="Platinumpage.html">Platinum Ticket</a>
+			</div>
+		</div>
+		<a href="Safariinfopage.html">Safari Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+
+	<div class="row">
+		<div class="side">
+			 <h2>Menu</h2>
+				<input type="text" id="mySearch" onkeyup="loadData()" placeholder="Search.." title="Type in a category">
+				<ul id="myMenu">
+					<li><a href="Registerpage.html">Register</a></li>
+					<li><a href="Profilepage.html">Profile</a></li>
+					<li><a href="Paymentpage.html">Payment</a></li>
+					<li><a href="#" class="active">Download</a></li>
+					<li><a href="Feedbackpage.html">Feed back</a></li>
+					<li><a href="Contactpage.html">Contact Us</a></li>
+				</ul>
+		</div>		
+		<div class="main">
+			<center><<div class="row10">
+				<p style="text-align: center; color: black;"> Click to Image or Video Download </p>
+				<button class="btn" style="width:50%"><i class="fa fa-download"></i> Download</button><br><br>
+			</div></center>
+			<div class="header5" id="myHeader5">
+				<p style="color: black;">Click on the buttons to change the grid view.</p>
+				<button class="btn1" onclick="one()">1</button>
+				<button class="btn1 active" onclick="two()">2</button>
+				<button class="btn1" onclick="four()">4</button>
+			</div>
+			<div class="row14"> 
+				<div class="column14">
+					<a href="..\images/M01.jpg" download><img src="..\images/M01.jpg" style="width:100%"></a>
+					<a href="..\images/M02.jpg" download><img src="..\images/M02.jpg" style="width:100%"></a>
+					<a href="..\images/M03.jpg" download><img src="..\images/M03.jpg" style="width:100%"></a>
+					<a href="..\images/M04.jpg" download><img src="..\images/M04.jpg" style="width:100%"></a>
+					<a href="..\images/M05.jpg" download><img src="..\images/M05.jpg" style="width:100%"></a>
+					<a href="..\images/M06.jpg" download><img src="..\images/M06.jpg" style="width:100%"></a>
+					<a href="..\images/M07.jpg" download><img src="..\images/M07.jpg" style="width:100%"></a>
+					<a href="..\images/B01.jpg" download><img src="..\images/B01.jpg" style="width:100%"></a>
+					<a href="..\images/B02.jpg" download><img src="..\images/B02.jpg" style="width:100%"></a>
+				</div>
+				<div class="column14">
+					<a href="..\images/H01.jpg" download><img src="..\images/H01.jpg" style="width:100%"></a>
+					<a href="..\images/H02.jpg" download><img src="..\images/H02.jpg" style="width:100%"></a>
+					<a href="..\images/H03.jpg" download><img src="..\images/H03.jpg" style="width:100%"></a>
+					<a href="..\images/H04.jpg" download><img src="..\images/H04.jpg" style="width:100%"></a>
+					<a href="..\images/H05.jpg" download><img src="..\images/H05.jpg" style="width:100%"></a>
+					<a href="..\images/H06.jpg" download><img src="..\images/H06.jpg" style="width:100%"></a>
+					<a href="..\images/H07.jpg" download><img src="..\images/H07.jpg" style="width:100%"></a>
+					<a href="..\images/H08.jpg" download><img src="..\images/H08.jpg" style="width:100%"></a>
+					<a href="..\images/B03.jpg" download><img src="..\images/B03.jpg" style="width:100%"></a>
+					<a href="..\images/B04.jpg" download><img src="..\images/B04.jpg" style="width:100%"></a>
+				</div>  
+				<div class="column14">
+					<a href="..\images/NE01.jpg" download><img src="..\images/NE01.jpg" style="width:100%"></a>
+					<a href="..\images/NE02.jpg" download><img src="..\images/NE02.jpg" style="width:100%"></a>
+					<a href="..\images/NE03.jpg" download><img src="..\images/NE03.jpg" style="width:100%"></a>
+					<a href="..\images/NE04.jpg" download><img src="..\images/NE04.jpg" style="width:100%"></a>
+					<a href="..\images/NE05.jpg" download><img src="..\images/NE05.jpg" style="width:100%"></a>
+					<a href="..\images/NE06.jpg" download><img src="..\images/NE06.jpg" style="width:100%"></a>
+					<a href="..\images/NE07.jpg" download><img src="..\images/NE07.jpg" style="width:100%"></a>
+					<a href="..\images/NE08.jpg" download><img src="..\images/NE08.jpg" style="width:100%"></a>
+					<a href="..\images/B05.jpg" download><img src="..\images/B05.jpg" style="width:100%"></a>
+					<a href="..\images/B06.jpg" download><img src="..\images/B06.jpg" style="width:100%"></a>
+				</div>
+				<div class="column14">
+					<a href="..\images/K01.jpg" download><img src="..\images/K01.jpg" style="width:100%"></a>
+					<a href="..\images/K02.jpg" download><img src="..\images/K02.jpg" style="width:100%"></a>
+					<a href="..\images/K03.jpg" download><img src="..\images/K03.jpg" style="width:100%"></a>
+					<a href="..\images/K04.jpg" download><img src="..\images/K04.jpg" style="width:100%"></a>
+					<a href="..\images/K05.jpg" download><img src="..\images/K05.jpg" style="width:100%"></a>
+					<a href="..\images/K06.jpg" download><img src="..\images/K06.jpg" style="width:100%"></a>
+					<a href="..\images/K07.jpg" download><img src="..\images/K07.jpg" style="width:100%"></a>
+					<a href="..\images/K08.jpg" download><img src="..\images/K08.jpg" style="width:100%"></a>
+					<a href="..\images/B07.jpg" download><img src="..\images/B07.jpg" style="width:100%"></a>
+					<a href="..\images/B08.jpg" download><img src="..\images/B08.jpg" style="width:100%"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h3>Contact Details</h3>
+          <div class="content">
+				<div class="place">
+					<span class="fas fa-map-marker-alt"></span>
+					<span class="text">Colombo road, Bambalapitiya</span>
+				</div>
+				<div class="phone">
+					<span class="fas fa-phone-alt"></span>
+					<span class="text">+94 788923263</span>
+				</div>
+				<div class="email">
+					<span class="fas fa-envelope"></span>
+					<span class="text">BoatSafari@gmail.com</span>
+				</div>
+          </div>
+        </div>
+        <div class="center box">
+          <h3>Contact Form</h3>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right box">
+          <h3>About Us</h3>
+          <div class="content">
+			<img src="..\images/Qrcode.jpg" width="75px" height="75px">
+            <h4>Opening Timings</h4>
+			<p>Mon-Fri 9.00am-5.00pm<br>Sat 9.00am-8.00pm<br>Sun 9.00am-4.00pm</p>
+          </div>
+        </div>
+      </div>
+	  <hr>
+		<div class="bottom">
+			<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+		</div>
+    </div>
+	
+</body>
+</html>
